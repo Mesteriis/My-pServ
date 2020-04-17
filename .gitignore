@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+CPServ/.idea
+.DS_Store
