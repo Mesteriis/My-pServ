@@ -1,10 +1,22 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="author" content="ShInc by AVM">
+    <!-- CSS -->
+    <link rel="stylesheet" href="mainStyle.css">
+
 	<title>{% block title%}Мой Сайт {% endblock %}</title>
 </head>
 <body>
-	{% block content %}{% endblock %}
+    <div class="ramka"> DIV Top Bar</div>
+    <div class="ramka"> DIV Navi Bar</div>
+    <div class="ramka"> DIV Main Content МЕДИАИЗМЕРИТЕЛЬ </div>
+        {% block content %}{% endblock %}
+    <div class="ramka"> DIV Fottor</div>
+
+
+
 </body>
 </html>
