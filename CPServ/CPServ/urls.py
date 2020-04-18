@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from CPServ.Apps import articles
+
 urlpatterns = [
     path('articles/', include('articles.urls')),
     path('ServerUsers/', include('ServerUsers.urls')),
     path('SmartHome/', include('SmartHome.urls')),
     path('sshkeys/', include('sshkeys.urls')),
     path('SWDistribs/', include('SWDistribs.urls')),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('jet_api/', include('jet_django.urls')),
 ]
