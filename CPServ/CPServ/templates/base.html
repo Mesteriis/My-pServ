@@ -1,20 +1,83 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
+    <!--META-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="author" content="ShInc by AVM">
-    <!-- CSS -->
-    <link rel="stylesheet" href="mainStyle.css">
+    <!--CSS include-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--JS include-->
+
 
 	<title>{% block title%}Мой Сайт {% endblock %}</title>
 </head>
+<header class="header">
+    <div class="sticky-wrapper">
+        <div class="container">
+            <div class="nav-row">
+                <a class="logo">
+                    <img src="img/Logo_v2_wth.png">
+                    <div>
+                        <span class="company">SH INC</span>
+                        <span class="product">For your life</span>
+                    </div>
+                </a>
+                <div class="navigation">
+                    <nav id="top_main_menu" class="navbar navbar-expand-lg">
+                        <ul class="navbar-nav ml-auto">
+                            тест
+                            <!--
+                            <li class="nav-item dropdown">
+                                <span class="item sub-item">О нас</span>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <span class="item sub-item">Технологии</span>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <span class="item sub-item">Решения</span>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <span class="item sub-item">Сервисы</span>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <span class="item sub-item">Информация</span>
+
+                            </li>
+                            <li class="nav-item dropdown">
+                                <span class="item sub-item"><i class="fas fa-language"></i></span>
+
+							</li>
+							<li class="nav-item"><a href="https://cp.tazeros.com" target="_blank" class="nav-link"><i class="fas fa-lock"></i></a></li>
+							-->
+                        </ul>
+                    </nav>
+                    <div class="menu d-inline-block d-lg-none">
+                        <a href="#" class="menu-opener"><i class="fas fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <body>
-    <div class="ramka"> DIV Top Bar</div>
-    <div class="ramka"> DIV Navi Bar</div>
-    <div class="ramka"> DIV Main Content МЕДИАИЗМЕРИТЕЛЬ </div>
-        {% block content %}{% endblock %}
-    <div class="ramka"> DIV Fottor</div>
+
+    <div class="navibar">
+        {% block Bar %}{% endblock %}
+    </div>
+    <div class="maincontent">
+
+    {% block content %}
+    {% endblock %}
+    </div>
+    <div class="ramka fottor ">
+        Created AVM by Sh Inc
+
+    </div>
 
 
 

@@ -21,7 +21,7 @@ body {
   font-weight: 500 !important;
   position: relative;
   left: 0;
-  transition: left 0.1s;
+  transition: left 0.1s; 
 
   background: #4b23a0;
   background: -moz-linear-gradient(left, #4b23a0 0%, #1e0a46 100%);
@@ -128,13 +128,6 @@ ol, ul, dl {
 
 /* COLORS */
 
-/*Template del after rls*/
-
-.ramka{
-  outline: 2px solid #000; /* Чёрная рамка */
-  border: 3px solid #fff; /* Белая рамка */
-}
-
 .logo {
   height: 50px;
   flex: 160px 0 0;
@@ -155,11 +148,11 @@ ol, ul, dl {
       font-size: 1.5rem;
       line-height: 1.5rem; }
     .logo span.product {
-      font-size: 14px;
-      line-height: 10px; }
+      font-size: 16px;
+      line-height: 12px; }
 
 #content {
-  margin-top: 40px;
+  margin-top: 40px; 
   margin-bottom: 40px;
 }
 
@@ -171,7 +164,7 @@ header {
   padding-top: 15px; }
   header .sticky-wrapper {
     background-color: transparent;
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0px 0px 0px 0px transparent;
     transition: all 0.1s;
     z-index: 100; }
   header .nav-row {
@@ -264,7 +257,7 @@ body.side-open {
     -ms-filter: blur(10px);
     filter: blur(10px); }
   body.side-open nav.navbar {
-    right: 0px;
+    right: 0px; 
     overflow-y: scroll;}
   body.side-open .navigation > .menu{
     pointer-events: none; }
@@ -300,7 +293,7 @@ body.sticky header:after {
   height: 100%; }
 
 footer{
-  padding-bottom: 30px;
+  padding-bottom: 30px; 
 }
 footer div.company .logo {
   margin-bottom: 40px;
@@ -389,7 +382,7 @@ input{
     color: rgba(255, 255, 255, .85);
     background-image: none;
     background-clip: padding-box;
-    /*border: 1px solid rgba(255, 255, 255, .4);*/
+    border: 1px solid rgba(255, 255, 255, .4);
     border-radius: 0;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     background-color: transparent;
@@ -441,12 +434,12 @@ textarea:hover,textarea:focus{
 
 .snake{
   position: relative;
-  margin: 25px 0;
+  margin: 25px 0px;
 }
 .snake:before{
   background-image: url("/img/art/10.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; 
   position: absolute;
   content: "";
   top: 0px;
@@ -490,7 +483,7 @@ textarea:hover,textarea:focus{
 .map-bg, .blue-bg{
   background-image: url("/img/map_bg.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; 
   background-size: cover;
   background-position: center;
   padding: 25px 0px;
@@ -503,7 +496,7 @@ textarea:hover,textarea:focus{
 .voronoi-bg{
   background-image: url("/img/voronoi_bg.svg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; 
   background-size: cover;
   background-position: center;
   padding: 25px 0px;
@@ -744,7 +737,7 @@ ul.styled.pink li:before{
     transform: rotate(90deg);
   }
 }
-.btn.need-more,
+.btn.need-more, 
 .btn.round-button {
   background: #73f9a2;
   border-radius: 50px;
@@ -762,7 +755,7 @@ ul.styled.pink li:before{
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.4);
 }
-.btn.need-more:before,
+.btn.need-more:before, 
 .btn.round-button:before {
 	position: absolute;
 	content: "";
@@ -776,7 +769,7 @@ ul.styled.pink li:before{
 	visibility: hidden;
 	transition: all 0.2s ease-in-out;
 }
-.btn.need-more:hover:before,
+.btn.need-more:hover:before, 
 .btn.round-button:hover:before {
 	visibility: visible;
 	opacity: 1;
@@ -1009,7 +1002,7 @@ pre{
 table.questions td:first-child{
   width: 100%;
 }
-table.questions tr > th + th,
+table.questions tr > th + th, 
 table.questions tr > td + td{
   text-align: center;
 }
@@ -1112,7 +1105,7 @@ input.error, textarea.error{
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
-.carousel.fullpage,
+.carousel.fullpage, 
 .carousel.fullpage .carousel-inner{
   width: 100%;
   height: 100%;
@@ -1128,7 +1121,7 @@ input.error, textarea.error{
 .carousel.fullpage .carousel-item > div section{
   width: 100%;
 }
-.carousel.fullpage .carousel-control-prev,
+.carousel.fullpage .carousel-control-prev, 
 .carousel.fullpage .carousel-control-next{
   width: 42px;
   text-align: center;
@@ -1137,7 +1130,7 @@ input.error, textarea.error{
   text-decoration: none;
   top: -100px;
 }
-.carousel.fullpage .carousel-control-prev:hover,
+.carousel.fullpage .carousel-control-prev:hover, 
 .carousel.fullpage .carousel-control-next:hover{
   opacity: 1;
   background-color: rgba(0,0,0,0.3);
@@ -1151,26 +1144,26 @@ input.error, textarea.error{
   }
   h1, .h1 {
     font-size: 1.85rem; }
-
+  
   h2, .h2 {
     font-size: 1.75rem; }
-
+  
   h3, .h3 {
     font-size: 1.5rem; }
-
+  
   h4, .h4 {
     font-size: 1.25rem; }
-
+  
   h5, .h5 {
     font-size: 1rem; }
-
+  
   h6, .h6 {
     font-size: .75rem; }
-  .carousel.fullpage .carousel-control-prev,
+  .carousel.fullpage .carousel-control-prev, 
   .carousel.fullpage .carousel-control-next{
     top: 0;
   }
-  .carousel.fullpage .carousel-control-prev:hover,
+  .carousel.fullpage .carousel-control-prev:hover, 
   .carousel.fullpage .carousel-control-next:hover{
     opacity: 1;
     background-color: transparent;
@@ -1185,13 +1178,13 @@ input.error, textarea.error{
 .need-more:hover, .need-more:active, .need-more:focus{
   border: none !important;
   outline: none !important;
-  box-shadow: none !important;
+  box-shadow: none !important; 
 }
 .icons-list img{
   max-width: 50px;
 }
 @media screen and (max-width: 991.98px){
-  .icons-list .row > div.col-2:nth-child(1),
+  .icons-list .row > div.col-2:nth-child(1), 
   .icons-list .row > div.col-3:nth-child(1){
     max-width: 50px;
     margin-left: 1rem;
@@ -1201,19 +1194,19 @@ input.error, textarea.error{
 @media screen and (max-height: 554.98px){
   h1, .h1 {
     font-size: 1.75rem; }
-
+  
   h2, .h2 {
     font-size: 1.5rem; }
-
+  
   h3, .h3 {
     font-size: 1.25rem; }
-
+  
   h4, .h4 {
     font-size: 1rem; }
-
+  
   h5, .h5 {
     font-size: .75rem; }
-
+  
   h6, .h6 {
     font-size: .5rem; }
   .carousel.fullpage .carousel-item p{
@@ -1231,19 +1224,19 @@ input.error, textarea.error{
   }
   h1, .h1 {
     font-size: 1.75rem; }
-
+  
   h2, .h2 {
     font-size: 1.5rem; }
-
+  
   h3, .h3 {
     font-size: 1.25rem; }
-
+  
   h4, .h4 {
     font-size: 1rem; }
-
+  
   h5, .h5 {
     font-size: .75rem; }
-
+  
   h6, .h6 {
     font-size: .5rem; }
 
